@@ -1,8 +1,11 @@
+import Layout from "./components/organisms/Layout";
+import { Outlet } from "react-router-dom";
+
 const App = () => {
   return (
-    <div className="App">
-      <h1>initialize</h1>
-    </div>
+    <Layout>
+      <Outlet />
+    </Layout>
   );
 };
 
