@@ -1,0 +1,32 @@
+export const breakpoints = {
+  tiny: 320,
+  xt: 375,
+  xs: 576,
+  sm: 768,
+  md: 992,
+  cl: 1024,
+  lg: 1440,
+  xl: 2560,
+  xxl: 3040,
+};
+
+export const device = {
+  tinyUp: `min-width: ${breakpoints.tiny}px`,
+  xtUp: `min-width: ${breakpoints.xt}px`,
+  xsUp: `min-width: ${breakpoints.xs}px`,
+  smUp: `min-width: ${breakpoints.sm}px`,
+  mdUp: `min-width: ${breakpoints.md}px`,
+  clUp: `min-width: ${breakpoints.cl}px`,
+  lgUp: `min-width: ${breakpoints.lg}px`,
+  xlUp: `min-width: ${breakpoints.xl}px`,
+  xxlUp: `min-width: ${breakpoints.xxl}px`,
+  tinyDown: `max-width: ${breakpoints.tiny - 1}px`,
+  xtDown: `max-width: ${breakpoints.xt - 1}px`,
+  xsDown: `max-width: ${breakpoints.xs - 1}px`,
+  smDown: `max-width: ${breakpoints.sm - 1}px`,
+  mdDown: `max-width: ${breakpoints.md - 1}px`,
+  clDown: `max-width: ${breakpoints.cl - 1}px`,
+  lgDown: `max-width: ${breakpoints.lg - 1}px`,
+  xlDown: `max-width: ${breakpoints.xl - 1}px`,
+  xxlDown: `max-width: ${breakpoints.xxl - 1}px`,
+};
