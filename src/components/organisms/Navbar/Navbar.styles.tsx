@@ -29,6 +29,9 @@ export const Hamburger = styled.div<ChangeProps>`
 
 export const CloseBtn = styled(FontAwesomeIcon)`
   cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 `;
 
 export const StyledDiv = styled.div<ChangeProps>`

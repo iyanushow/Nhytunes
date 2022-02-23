@@ -17,6 +17,10 @@ import {
 } from "./Footer.styles";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window?.scrollTo(0, 0);
+  };
+
   return (
     <FooterSection>
       <Inner>
@@ -73,7 +77,12 @@ const Footer = () => {
         </Socials>
         <Copy>© 2021</Copy>
 
-        <Return imageUrl="/images/svgs/uparrow.svg" width={16} height={60} />
+        <Return
+          imageUrl="/images/svgs/uparrow.svg"
+          width={16}
+          height={60}
+          handleClick={scrollToTop}
+        />
       </Inner>
       <Outer></Outer>
     </FooterSection>

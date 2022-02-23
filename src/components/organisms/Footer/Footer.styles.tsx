@@ -24,7 +24,7 @@ export const Inner = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); */
+  position: relative;
   & > * {
     margin: 20px 0;
   }
@@ -151,6 +151,7 @@ export const Return = styled(ImageAnchor)`
   @media (${device.smUp}) {
     position: absolute;
     grid-column: unset;
+    right: 0;
   }
 `;
 

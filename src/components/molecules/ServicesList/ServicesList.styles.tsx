@@ -11,7 +11,7 @@ export const StyledDiv = styled.div`
   @media (${device.xtUp}) {
     justify-content: flex-start;
   }
-  @media (${device.mdUp}) {
+  @media (${device.lgUp}) {
     column-gap: 36px;
     row-gap: 30px;
   }

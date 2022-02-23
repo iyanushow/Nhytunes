@@ -6,11 +6,12 @@ export interface ImageProps {
   height?: number;
   className?: string;
   imageUrl: string;
+  handleClick?: React.MouseEventHandler<HTMLElement>;
 }
 
-const ImageAnchor = ({ height, width, imageUrl = "", className }: ImageProps) => {
+const ImageAnchor = ({ height, width, imageUrl = "", className, handleClick }: ImageProps) => {
   return (
-    <StyledFigure height={height} width={width} className={className}>
+    <StyledFigure height={height} width={width} className={className} onClick={handleClick}>
       <Img src={imageUrl} />
     </StyledFigure>
   );
