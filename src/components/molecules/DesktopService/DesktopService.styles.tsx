@@ -27,11 +27,12 @@ export const Tab = styled.div<TabProps>`
   flex-direction: row;
   align-items: center;
   padding: 18px 30px;
+  width: 100%;
   max-width: 390px;
   height: 64px;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: ${({ theme, selected }) => (selected ? 0 : theme.borderRadius)};
   cursor: pointer;
 
   font-size: 14px;
@@ -54,4 +55,12 @@ export const StyledImage = styled(ImageAnchor)`
   }
 `;
 
-export const TabDiv = styled.div``;
+export const TabDiv = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+export const StyledSet = styled.div<TabProps>`
+  background: ${({ theme, selected }) => (selected ? theme.colors.primary : "transparent")};
+  width: 10px;
+  transition: all 0.4s ease-in-out;
+`;

@@ -87,7 +87,12 @@ export const StyledLink = styled(Link)`
   font-size: ${props => props.theme.font.typeScale.heading5};
   font-weight: 300;
   line-height: 2;
-  /* margin: 10px 0; */
+  transition: all 0.3s linear;
+
+  &:hover {
+    color: ${props => props.theme.colors.primary};
+    transform: scale(0.98);
+  }
 `;
 
 export const ContactBlock = styled.div`
@@ -140,7 +145,13 @@ export const Text = styled(Paragraph)`
   line-height: 2;
 `;
 
-export const SocialIcon = styled(ImageAnchor)``;
+export const SocialIcon = styled(ImageAnchor)`
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.4);
+  }
+`;
 
 export const Return = styled(ImageAnchor)`
   grid-column: 2/3;

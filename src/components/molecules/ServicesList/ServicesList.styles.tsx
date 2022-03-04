@@ -11,6 +11,9 @@ export const StyledDiv = styled.div`
   @media (${device.xtUp}) {
     justify-content: flex-start;
   }
+  @media (${device.xsUp}) {
+    justify-content: space-between;
+  }
   @media (${device.lgUp}) {
     column-gap: 36px;
     row-gap: 30px;

@@ -78,7 +78,7 @@ export const Quote = styled.div`
 export const Text = styled.p`
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: clamp(0.75rem, 0.6903rem + 0.2985vw, 1.25rem);
   line-height: 1.5;
   color: #000000d8;
 `;
@@ -92,7 +92,7 @@ export const Meta = styled.div`
 export const StyledHeading = styled(Heading)`
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: clamp(0.75rem, 0.6903rem + 0.2985vw, 1.25rem);
 
   color: #000000;
 `;

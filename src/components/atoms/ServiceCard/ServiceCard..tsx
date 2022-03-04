@@ -4,6 +4,7 @@ import {
   StyledHeading,
   StyledImageAnchor,
   StyledInner,
+  StyledLink,
 } from "./ServiceCard.styles";
 
 export interface IService {
@@ -17,19 +18,21 @@ interface ServiceProps extends IService {
   className?: string;
 }
 
-const ServiceCard = ({ className, imageUrl, content, heading, ...rest }: ServiceProps) => {
+const ServiceCard = ({ id, className, imageUrl, content, heading, ...rest }: ServiceProps) => {
   return (
-    <StyledDiv className={className}>
-      <StyledInner>
-        <StyledImageAnchor imageUrl={imageUrl} width={58} height={58} />
+    <StyledLink to={`/services/${id}`}>
+      <StyledDiv className={className}>
+        <StyledInner>
+          <StyledImageAnchor imageUrl={imageUrl} width={58} height={58} />
 
-        <StyledHeading level="h4" color="primary">
-          {heading}
-        </StyledHeading>
+          <StyledHeading level="h4" color="primary">
+            {heading}
+          </StyledHeading>
 
-        <Content>{content}</Content>
-      </StyledInner>
-    </StyledDiv>
+          <Content>{content}</Content>
+        </StyledInner>
+      </StyledDiv>
+    </StyledLink>
   );
 };
 

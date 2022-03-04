@@ -60,9 +60,6 @@ export const StyledDiv = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (${device.xtUp}) {
-    justify-content: flex-start;
-  }
   @media (${device.mdUp}) {
     column-gap: 36px;
     row-gap: 30px;

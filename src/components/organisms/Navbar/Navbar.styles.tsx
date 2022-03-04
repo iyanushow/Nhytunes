@@ -37,7 +37,7 @@ export const CloseBtn = styled(FontAwesomeIcon)`
 export const StyledDiv = styled.div<ChangeProps>`
   width: 65%;
   max-width: 300px;
-  height: 100vh;
+  height: 450px;
   z-index: 2;
   color: ${props => props.theme.colors.white};
   display: flex;

@@ -211,10 +211,12 @@ provision and supplies of trucks spares parts, sales and purchase of scrap metal
   },
 ];
 
-const ServicesGrid = () => {
+const ServicesGrid = ({ initialService = 1 }: { initialService: number }) => {
   const [services] = useState(serviceList);
 
-  const [selectedService, setSelectedService] = useState(services[0]);
+  const [selectedService, setSelectedService] = useState(
+    services.find(service => service.id === initialService) || services[0]
+  );
 
   return (
     <Wrapper>
