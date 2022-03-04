@@ -52,8 +52,10 @@ export const StyledParagraph = styled(Paragraph)`
   text-align: justify;
 
   @media (${device.lgUp}) {
-    font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.75rem);
+    font-size: clamp(0.75rem, 0.6306rem + 0.597vw, 1.75rem);
+    font-weight: 300;
     line-height: 1.8;
+    margin: 0 0 20px 0;
   }
 `;
 
