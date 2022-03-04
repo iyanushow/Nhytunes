@@ -5,8 +5,8 @@ import {
   Container,
   TabBlock,
   Tab,
-  // TabDiv,
-  // StyledSet,
+  TabDiv,
+  StyledSet,
   ImageBlock,
   StyledImage,
 } from "./DesktopService.styles";
@@ -18,12 +18,13 @@ const DesktopService = ({ carouselData }: DataProps) => {
     <Container>
       <TabBlock>
         {carouselData.map((item, idx) => (
-          // <TabDiv>
-          //   <StyledSet></StyledSet>
-          <Tab key={item.title} onClick={() => setSelected(idx)} selected={selected === idx}>
-            {item.title}
-          </Tab>
-          // </TabDiv>
+          <TabDiv>
+            <StyledSet selected={selected === idx} />
+
+            <Tab key={item.title} onClick={() => setSelected(idx)} selected={selected === idx}>
+              {item.title}
+            </Tab>
+          </TabDiv>
         ))}
       </TabBlock>
 
