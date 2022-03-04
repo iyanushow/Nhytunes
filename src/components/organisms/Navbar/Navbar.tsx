@@ -32,7 +32,7 @@ const Navbar = () => {
         <CloseBtn icon={faX} size="2x" onClick={toggleNav} />
         <LinkContainer>
           <NavLink to="about">About us</NavLink>
-          <NavLink to="services">Services</NavLink>
+          <NavLink to="services/:1">Services</NavLink>
           <NavLink to="projects">Projects</NavLink>
           <CtaButton variant="primary" type="link" link="enquiry">
             Contact us

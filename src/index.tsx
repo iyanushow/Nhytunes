@@ -24,7 +24,7 @@ ReactDOM.render(
             <Route path="about" element={<About />} />
             <Route path="projects" element={<Projects />} />
             <Route path="enquiry" element={<Contact />} />
-            <Route path="services" element={<Services />} />
+            <Route path="services/:serviceId" element={<Services />} />
             <Route
               path="*"
               element={
