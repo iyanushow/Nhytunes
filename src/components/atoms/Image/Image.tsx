@@ -1,7 +1,7 @@
 import React from "react";
 import { Img, StyledFigure } from "./Image.styles";
 
-export interface ImageProps {
+export interface ImageProps extends React.HTMLAttributes<HTMLImageElement> {
   width?: number;
   height?: number;
   className?: string;
@@ -9,9 +9,22 @@ export interface ImageProps {
   handleClick?: React.MouseEventHandler<HTMLElement>;
 }
 
-const ImageAnchor = ({ height, width, imageUrl = "", className, handleClick }: ImageProps) => {
+const ImageAnchor = ({
+  height,
+  width,
+  imageUrl = "",
+  className,
+  handleClick,
+  ...rest
+}: ImageProps) => {
   return (
-    <StyledFigure height={height} width={width} className={className} onClick={handleClick}>
+    <StyledFigure
+      height={height}
+      width={width}
+      className={className}
+      onClick={handleClick}
+      {...rest}
+    >
       <Img src={imageUrl} />
     </StyledFigure>
   );
