@@ -12,12 +12,16 @@ import About from "./routes/About";
 import Projects from "./routes/Projects";
 import Contact from "./routes/Contact";
 import Services from "./routes/Services";
+import NotFound from "./routes/NotFound";
+
+import ScrollTop from "./components/atoms/ScrollTop";
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <BrowserRouter>
+        <ScrollTop />
         <Routes>
           <Route path="/" element={<App />}>
             <Route index element={<Home />} />
@@ -25,14 +29,7 @@ ReactDOM.render(
             <Route path="projects" element={<Projects />} />
             <Route path="enquiry" element={<Contact />} />
             <Route path="services/:serviceId" element={<Services />} />
-            <Route
-              path="*"
-              element={
-                <main style={{ padding: "1rem" }}>
-                  <p>404! page doesn't exist </p>
-                </main>
-              }
-            />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
