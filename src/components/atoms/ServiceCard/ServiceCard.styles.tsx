@@ -4,6 +4,8 @@ import ImageAnchor from "../Image";
 import Heading from "../Heading";
 import Paragraph from "../Paragraph";
 import { device } from "../../../utils";
+import { Link } from "react-router-dom";
+import { darken } from "polished";
 
 interface ImageProps {
   width: number;
@@ -18,6 +20,28 @@ export const StyledDiv = styled.div`
   border-radius: 4px;
   height: 231px;
   max-width: 540px;
+  transition: all 0.3s linear;
+
+  @media (${device.mdUp}) {
+    padding: 20px;
+  }
+
+  @media (${device.xsUp}) {
+    min-width: 165px;
+  }
+
+  &:hover {
+    box-shadow: 0px 6px 50px ${darken(0.2, "#00000014")};
+    transform: translateY(-10px) rotate(-1deg) scale(0.98);
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  cursor: pointer;
+
   width: 90%;
 
   @media (${device.xtUp}) {
@@ -27,10 +51,6 @@ export const StyledDiv = styled.div`
   @media (${device.xsUp}) {
     width: 48%;
     min-width: 165px;
-  }
-
-  @media (${device.mdUp}) {
-    padding: 20px;
   }
 `;
 
