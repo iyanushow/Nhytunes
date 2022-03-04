@@ -30,11 +30,11 @@ const Footer = () => {
           <StyledHeading color="secondary" level="h3">
             Quick Links
           </StyledHeading>
-          <StyledLink to="">Vessel Chartering and Brokerage</StyledLink>
-          <StyledLink to="">Marine and Offshores Units Surveys</StyledLink>
-          <StyledLink to="">Vessel Management</StyledLink>
-          <StyledLink to="">Oil and Gas services</StyledLink>
-          <StyledLink to="">Marine and Offshore Supplies</StyledLink>
+          <StyledLink to="/services/:1">Vessel Chartering and Brokerage</StyledLink>
+          <StyledLink to="/services/:2">Marine and Offshores Units Surveys</StyledLink>
+          <StyledLink to="/services/:3">Vessel Management</StyledLink>
+          <StyledLink to="/services/:4">Oil and Gas services</StyledLink>
+          <StyledLink to="/services/:5">Marine and Offshore Supplies</StyledLink>
         </QuickLinks>
 
         <QuickLinks>
