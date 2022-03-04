@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Contact,
   ContactBlock,
@@ -24,7 +25,9 @@ const Footer = () => {
   return (
     <FooterSection>
       <Inner>
-        <Logo imageUrl="/images/svgs/nnl_logo.svg" width={120} height={45} />
+        <Link to="/">
+          <Logo imageUrl="/images/svgs/nnl_logo.svg" width={120} height={45} />
+        </Link>
 
         <QuickLinks>
           <StyledHeading color="secondary" level="h3">
@@ -41,11 +44,11 @@ const Footer = () => {
           <StyledHeading color="secondary" level="h3">
             Other Links
           </StyledHeading>
-          <StyledLink to="">Home</StyledLink>
-          <StyledLink to="">About Us</StyledLink>
-          <StyledLink to="">Contact</StyledLink>
-          <StyledLink to="">Projects Executed</StyledLink>
-          <StyledLink to="">Management</StyledLink>
+          <StyledLink to="/">Home</StyledLink>
+          <StyledLink to="/about">About Us</StyledLink>
+          <StyledLink to="/enquiry">Contact</StyledLink>
+          <StyledLink to="/projects">Projects Executed</StyledLink>
+          <StyledLink to="/services/:1">Services</StyledLink>
         </QuickLinks>
 
         <ContactBlock>
@@ -75,7 +78,7 @@ const Footer = () => {
           <SocialIcon width={24} height={24} imageUrl="/images/svgs/twitter.svg"></SocialIcon>
           <SocialIcon width={24} height={24} imageUrl="/images/svgs/youtube.svg"></SocialIcon>
         </Socials>
-        <Copy>© 2021</Copy>
+        <Copy>© 2022</Copy>
 
         <Return
           imageUrl="/images/svgs/uparrow.svg"
