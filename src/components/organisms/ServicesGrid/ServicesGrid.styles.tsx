@@ -82,7 +82,7 @@ export const Content = styled.div`
   text-align: justify;
   transition: all 0.4s ease-in-out;
   * {
-    font-size: clamp(0.75rem, 0.7052rem + 0.2239vw, 1.125rem);
+    font-size: clamp(0.75rem, 0.6306rem + 0.597vw, 1.75rem);
     line-height: 180%;
     transition: all 0.4s ease-in-out;
   }
