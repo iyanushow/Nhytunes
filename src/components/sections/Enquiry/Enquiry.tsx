@@ -68,15 +68,16 @@ const Enquiry = () => {
         <Content>
           <StyledIcon width={32} height={32} imageUrl="/images/enquiry/email.svg" />
           <StyledText>
-            info@oratib.com <br /> oratibinsurance@yahoo.com
+            info@nnlglobalenergy.com
+            <br /> nnlglobalenergy@gmail.com
           </StyledText>
         </Content>
         <Content>
           <StyledIcon width={32} height={32} imageUrl="/images/enquiry/phone.svg" />
           <StyledText>
-            (234) 1 454 5227
+            +(234) 706 979 4016
             <br />
-            (234) 704-566-2813
+            +(234) 811 732 3037
           </StyledText>
         </Content>
         <Content>
