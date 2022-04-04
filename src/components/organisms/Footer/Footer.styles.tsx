@@ -29,6 +29,12 @@ export const Inner = styled.div`
     margin: 20px 0;
   }
 
+  @media (${device.smUp}) and (${device.lgDown}) {
+    & > a {
+      grid-column: 1/3;
+    }
+  }
+
   @media (${device.lgUp}) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 150px) 60px;
