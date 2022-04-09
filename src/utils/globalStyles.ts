@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
   html{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'BR Firma','Roboto', sans-serif;
     font-weight: 400;
     scroll-behavior: smooth;
   }

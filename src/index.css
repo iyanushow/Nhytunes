@@ -1,2 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Quicksand:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/* File: font.css */
+@font-face {
+  font-family: "BR Firma";
+  src: url("./custom-font/BR\ Firma\ Thin.otf") format("opentype"),
+    url("./custom-font/BR\ Firma\ Regular.otf") format("opentype"),
+    url("./custom-font/BR\ Firma\ SemiBold.otf") format("opentype"),
+    url("./custom-font/BR\ Firma\ Medium.otf") format("opentype"),
+    url("./custom-font/BR\ Firma\ Light.otf") format("opentype"),
+    url("./custom-font/BR\ Firma\ Bold.otf") format("opentype"),
+    url("./custom-font/BR\ Firma\ Black.otf") format("opentype");
+}
