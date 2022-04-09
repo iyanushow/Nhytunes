@@ -14,21 +14,25 @@ export type DataProps = {
 export const projects = [
   {
     id: 1,
+    title: "Off-hire surveys ",
+    imageUrl: "/images/projects/offhire_survey.jpg",
+  },
+  {
+    id: 2,
     title: "Pipeline inspection at Dangote Refinary",
     imageUrl: "/images/projects/dangote.jpg",
   },
   {
-    id: 2,
+    id: 3,
     title: "Inspection for Pipeline Pigging",
     imageUrl: "/images/projects/pipeline_pigging.jpg",
   },
-  { id: 3, title: "Drydocking attendance", imageUrl: "/images/projects/drydocking.jpg" },
+  { id: 4, title: "Drydocking attendance", imageUrl: "/images/projects/drydocking.jpg" },
   {
-    id: 4,
+    id: 5,
     title: "Pre- Purchase Inspection on 7000mt self propelled barge from Ghana",
     imageUrl: "/images/projects/purchase_inspection.jpg",
   },
-  { id: 5, title: "Off-hire surveys ", imageUrl: "/images/projects/offhire_survey.jpg" },
   { id: 6, title: "Rudder work on AHT", imageUrl: "/images/projects/rudder.jpg" },
   {
     id: 7,
