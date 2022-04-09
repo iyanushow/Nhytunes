@@ -48,7 +48,7 @@ export const StyledHeading = styled(Heading)`
   color: ${props => props.theme.colors.white};
   font-weight: 700;
   text-align: center;
-  font-size: clamp(1.5rem, 1.1418rem + 1.791vw, 4.5rem);
+  font-size: clamp(1.5rem, 1.2015rem + 1.4925vw, 4rem);
 `;
 
 export const CtaButton = styled(Button)`
