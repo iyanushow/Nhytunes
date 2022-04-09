@@ -56,13 +56,18 @@ const Footer = () => {
             <StyledHeading color="secondary" level="h3">
               Get in touch
             </StyledHeading>
-            <Text>+ 234 803 234 1234</Text>
+            <Text>
+              +234 706 979 4016 <br /> +234 811 732 3037
+            </Text>
           </Contact>
           <Contact>
             <StyledHeading color="secondary" level="h3">
               Email Address{" "}
             </StyledHeading>
-            <Text>info@nnlglobalenergy.com</Text>
+            <Text>
+              nnlglobalenergy@gmail.com <br />
+              info@nnlge.com
+            </Text>
           </Contact>
           <Contact>
             <StyledHeading color="secondary" level="h3">

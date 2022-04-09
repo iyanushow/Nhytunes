@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { IProject, projects } from "../../../utils";
 import {
   Container,
@@ -13,9 +12,9 @@ import {
   BtnGroup,
 } from "./Projects.styles";
 
-const Projects = ({ className = "" }) => {
-  const [products] = useState<IProject[]>(projects.filter((_, idx) => idx < 4));
+const products: IProject[] = projects.filter((_, idx) => idx < 4);
 
+const Projects = ({ className = "" }) => {
   return (
     <Container>
       <TextBlock>
@@ -40,7 +39,7 @@ const Projects = ({ className = "" }) => {
       </StyledDiv>
 
       <BtnGroup>
-        <StyledButton type="link" link="project" variant="secondary">
+        <StyledButton type="link" link="projects" variant="secondary">
           See More
         </StyledButton>
       </BtnGroup>
