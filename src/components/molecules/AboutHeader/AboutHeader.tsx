@@ -21,7 +21,10 @@ const AboutHeader = () => {
           NNL Global Energy is a subsidiary of Nhytunes Nigeria Limited, a company registered by
           corporate affairs commission having its registered office in Nigeria. It’s objective is to
           carry out certain specialized services in Marine, oil and gas, Energy, Chemical and
-          industrial sector.
+          industrial sector. We are a seasoned group of professionals, providing a wide range of
+          services across different sectors to sufficiently satisfy our client’s needs. Our global
+          presence and track records for quality service delivery has created a niche in the global
+          oil and gas sector.
         </StyledParagraph>
       </StyledDiv>
     </StyledSection>

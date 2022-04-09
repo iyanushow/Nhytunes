@@ -12,7 +12,7 @@ export const MissionBlock = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-
+  margin-bottom: 60px;
   @media (${device.smUp}) {
     gap: 30px;
   }
@@ -48,23 +48,12 @@ export const Body = styled(Paragraph)`
 `;
 
 export const TeamBlock = styled.div`
-  margin: 30px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  @media (${device.smUp}) {
-    justify-content: space-between;
-  }
-
-  @media (${device.clUp}) {
-    margin: 80px auto;
-  }
+  margin: 50px auto;
 `;
 
 export const StyledImageAnchor = styled(ImageAnchor)`
-  @media (${device.smUp}) {
-    flex-basis: 40%;
+  img {
+    border-radius: 6px;
   }
 `;
 export const Quote = styled.div`
@@ -106,3 +95,28 @@ export const ServicesSection = styled(Services)`
     gap: 40px;
   }
 `;
+
+export const StyledTitle = styled(Title)`
+  font-weight: 500;
+  font-size: clamp(1rem, 0.8209rem + 0.8955vw, 2.5rem);
+  text-transform: capitalize;
+  text-align: center;
+  color: #000000;
+`;
+
+export const Content = styled.div``;
+export const Name = styled(Heading)`
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+`;
+export const Details = styled(Paragraph)`
+  font-family: BR Firma;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+`;
+export const PersonContainer = styled.div``;

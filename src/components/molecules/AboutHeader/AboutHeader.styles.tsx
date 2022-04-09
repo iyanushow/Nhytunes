@@ -74,7 +74,7 @@ export const StyledImageAnchor = styled(ImageAnchor)`
 export const StyledDiv = styled.div`
   @media (${device.clUp}) {
     grid-row: 3/7;
-    width: 70%;
+    width: 90%;
   }
 `;
 
