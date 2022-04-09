@@ -84,5 +84,5 @@ export const StyledHeading = styled(Heading)`
 export const Content = styled(Paragraph)`
   font-size: clamp(0.75rem, 0.6903rem + 0.2985vw, 1.25rem);
   color: #5d6070;
-  font-weight: 400;
+  font-weight: 300;
 `;
