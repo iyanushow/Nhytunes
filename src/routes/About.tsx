@@ -52,7 +52,10 @@ const About = () => {
 
           <TeamBlock>
             <PersonContainer>
-              <StyledImageAnchor imageUrl="https://res.cloudinary.com/di7pnx5q2/image/upload/f_auto,q_auto:best/v1649494917/nhytunes/mgt/babatunde.jpg" />
+              <StyledImageAnchor
+                width={328}
+                imageUrl="https://res.cloudinary.com/di7pnx5q2/image/upload/f_auto,q_auto:best/v1649494917/nhytunes/mgt/babatunde.jpg"
+              />
               <Content>
                 <Name level="h3" aligned="left" color="primary">
                   Babatunde Olusegun
@@ -76,7 +79,10 @@ const About = () => {
             </PersonContainer>
 
             <PersonContainer>
-              <StyledImageAnchor imageUrl="https://res.cloudinary.com/di7pnx5q2/image/upload/f_auto,q_auto:best/v1649492765/nhytunes/mgt/kadiri.jpg" />
+              <StyledImageAnchor
+                width={328}
+                imageUrl="https://res.cloudinary.com/di7pnx5q2/image/upload/f_auto,q_auto:best/v1649492765/nhytunes/mgt/kadiri.jpg"
+              />
               <Content>
                 <Name level="h3" aligned="left" color="primary">
                   KADIRI O. KUBURAT{" "}
@@ -96,7 +102,10 @@ const About = () => {
             </PersonContainer>
 
             <PersonContainer>
-              <StyledImageAnchor imageUrl="https://res.cloudinary.com/di7pnx5q2/image/upload/f_auto,q_auto:best/v1649492765/nhytunes/mgt/abdel.jpg" />
+              <StyledImageAnchor
+                width={328}
+                imageUrl="https://res.cloudinary.com/di7pnx5q2/image/upload/f_auto,q_auto:best/v1649492765/nhytunes/mgt/abdel.jpg"
+              />
               <Content>
                 <Name level="h3" aligned="left" color="primary">
                   Capt. Abdelkader Nasser Rezk{" "}

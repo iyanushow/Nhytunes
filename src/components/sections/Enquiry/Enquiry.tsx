@@ -68,8 +68,8 @@ const Enquiry = () => {
         <Content>
           <StyledIcon width={32} height={32} imageUrl="/images/enquiry/email.svg" />
           <StyledText>
-            nnlglobalenergy@gmail.com
-            <br />
+            nnlglobalenergy@gmail.com <br />
+            info@nnlge.com
           </StyledText>
         </Content>
         <Content>

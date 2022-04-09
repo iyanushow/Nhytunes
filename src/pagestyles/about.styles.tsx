@@ -6,7 +6,9 @@ import ImageAnchor from "../components/atoms/Image";
 import { device } from "../utils";
 import { Services } from "../components/sections";
 
-export const MissionSection = styled(Section)``;
+export const MissionSection = styled(Section)`
+  padding-bottom: 20px;
+`;
 
 export const MissionBlock = styled.div`
   display: flex;
@@ -15,6 +17,9 @@ export const MissionBlock = styled.div`
   margin-bottom: 60px;
   @media (${device.smUp}) {
     gap: 30px;
+  }
+  @media (${device.lgUp}) {
+    margin-bottom: 240px;
   }
 `;
 
@@ -48,10 +53,21 @@ export const Body = styled(Paragraph)`
 `;
 
 export const TeamBlock = styled.div`
-  margin: 50px auto;
+  margin: 30px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 `;
 
 export const StyledImageAnchor = styled(ImageAnchor)`
+  margin: 0 auto;
+
+  @media (${device.xtUp}) {
+    flex-basis: 328px;
+    min-width: 328px;
+  }
+
   img {
     border-radius: 6px;
   }
@@ -108,15 +124,32 @@ export const Content = styled.div``;
 export const Name = styled(Heading)`
   text-transform: uppercase;
   margin: 10px 0;
-  font-size: 24px;
+  font-size: clamp(0.875rem, 0.7407rem + 0.6716vw, 2rem);
   font-weight: 400;
+
+  @media (${device.smUp}) {
+    margin: 0 0 10px;
+  }
 `;
 export const Details = styled(Paragraph)`
   font-family: BR Firma;
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.6903rem + 0.2985vw, 1.25rem);
   font-weight: 400;
-  line-height: 29px;
+  line-height: 1.8;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: justify;
+  @media (${device.clUp}) {
+    /* max-width: 1440px; */
+  }
 `;
-export const PersonContainer = styled.div``;
+export const PersonContainer = styled.div`
+  margin: 30px 0;
+
+  @media (${device.smUp}) {
+    display: flex;
+    gap: 16px;
+  }
+  @media (${device.clUp}) {
+    gap: 56px;
+  }
+`;

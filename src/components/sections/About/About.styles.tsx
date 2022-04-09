@@ -29,8 +29,8 @@ export const StyledSection = styled(Section)`
 
 export const StyledHeading = styled(Heading)`
   font-size: clamp(1.25rem, 0.8929rem + 1.7857vw, 2.5rem);
-  font-weight: 400;
-  line-height: 30px;
+  font-weight: 600;
+  line-height: 48px;
   letter-spacing: 0em;
   margin: 20px 30% 20px 0;
 
