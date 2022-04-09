@@ -20,9 +20,7 @@ const buttonVariant = (props: VariantProps) => {
                     background: ${props.theme.button.primaryHover};
                 }
 
-                &:active {
-                    background: ${props.theme.button.primaryHover};
-                }
+               
             `;
     case "secondary":
       return `
@@ -34,9 +32,7 @@ const buttonVariant = (props: VariantProps) => {
                     background: ${props.theme.button.secondaryHover};
                 }
 
-                &:active {
-                    background: ${props.theme.button.secondaryHover};
-                }
+                
             `;
 
     default:

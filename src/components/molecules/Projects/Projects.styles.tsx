@@ -103,7 +103,8 @@ export const StyledButton = styled(Button)`
   color: ${({ theme }) => theme.colors.primary};
   width: 180px;
   border-radius: 4px;
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
     background: ${darken(0.02, "#8E1413")};
     color: white;

@@ -12,63 +12,22 @@ export const DataGrid = styled(Section)`
 `;
 
 export const Title = styled(Heading)`
-  font-size: clamp(1.125rem, 1.0205rem + 0.5224vw, 2rem);
-  font-weight: 400;
+  font-size: clamp(1.125rem, 0.9011rem + 1.1194vw, 3rem);
+  font-weight: 600;
   line-height: 1.25;
   margin: 16px 0;
 `;
 
 export const ContentBox = styled.div`
-  padding: 30px 0;
-
-  @media (${device.smUp}) {
-    //option one
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 20px;
-  }
+  margin: 30px 0;
 `;
 
 export const StyledImage = styled(ImageAnchor)`
-  /* max-width: 530px; */
   margin: 16px auto;
   transition: all 0.4s ease-in-out;
 
-  @media (${device.smUp}) {
-    margin: 0;
-
-    //option one
-    width: 48%;
-
-    &:nth-of-type(2) {
-      justify-self: right;
-      margin-left: auto;
-      order: 2;
-
-      position: relative;
-      top: -80px;
-    }
-
-    //option two
-
-    /* &:nth-of-type(1) {
-      float: left;
-      width: 48%;
-      margin: 0 auto 40px;
-    }
-    &:nth-of-type(2) {
-      float: right;
-      width: 48%;
-      margin: 30px auto;
-    } */
-  }
-
-  @media (${device.mdUp}) {
-    &:nth-of-type(2) {
-      position: relative;
-      top: -100px;
-    }
+  img {
+    border-radius: 6px;
   }
 `;
 // float: right;
@@ -76,43 +35,23 @@ export const StyledImage = styled(ImageAnchor)`
 //     margin: 20px 0 20px 40px;
 
 export const Content = styled.div`
-  font-size: clamp(0.75rem, 0.7052rem + 0.2239vw, 1.125rem);
+  font-size: clamp(0.75rem, 0.6903rem + 0.2985vw, 1.25rem);
   font-weight: 300;
   line-height: 180%;
   text-align: justify;
   transition: all 0.4s ease-in-out;
+  margin: 30px 0;
+
   * {
-    font-size: clamp(0.75rem, 0.6306rem + 0.597vw, 1.75rem);
     line-height: 180%;
-    transition: all 0.4s ease-in-out;
+    font-size: clamp(0.75rem, 0.6903rem + 0.2985vw, 1.25rem);
+    font-weight: 300;
+    line-height: 180%;
   }
 
   ul {
     margin-left: 20px;
-  }
-
-  @media (${device.smUp}) {
-    /* &:first-of-type {
-      grid-row: 1/4;
-      margin: 0;
-    }
-
-    &:nth-of-type(2) {
-      grid-row: 6/10;
-    } */
-
-    flex-basis: 46%;
-    align-self: flex-start;
-
-    //method two
-    /* &:nth-of-type(1) {
-      width: 46%;
-      margin-left: auto;
-    }
-    &:nth-of-type(2) {
-      width: 46%;
-      margin-right: auto;
-    } */
+    margin-top: 40px;
   }
 `;
 

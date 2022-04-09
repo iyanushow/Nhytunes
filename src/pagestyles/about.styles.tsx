@@ -6,15 +6,20 @@ import ImageAnchor from "../components/atoms/Image";
 import { device } from "../utils";
 import { Services } from "../components/sections";
 
-export const MissionSection = styled(Section)``;
+export const MissionSection = styled(Section)`
+  padding-bottom: 20px;
+`;
 
 export const MissionBlock = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-
+  margin-bottom: 60px;
   @media (${device.smUp}) {
     gap: 30px;
+  }
+  @media (${device.lgUp}) {
+    margin-bottom: 240px;
   }
 `;
 
@@ -49,22 +54,22 @@ export const Body = styled(Paragraph)`
 
 export const TeamBlock = styled.div`
   margin: 30px auto;
+
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  @media (${device.smUp}) {
-    justify-content: space-between;
-  }
-
-  @media (${device.clUp}) {
-    margin: 80px auto;
-  }
+  flex-direction: column;
+  gap: 50px;
 `;
 
 export const StyledImageAnchor = styled(ImageAnchor)`
-  @media (${device.smUp}) {
-    flex-basis: 40%;
+  margin: 0 auto;
+
+  @media (${device.xtUp}) {
+    flex-basis: 328px;
+    min-width: 328px;
+  }
+
+  img {
+    border-radius: 6px;
   }
 `;
 export const Quote = styled.div`
@@ -104,5 +109,47 @@ export const StyledText = styled(StyledHeading)`
 export const ServicesSection = styled(Services)`
   & > div {
     gap: 40px;
+  }
+`;
+
+export const StyledTitle = styled(Title)`
+  font-weight: 500;
+  font-size: clamp(1rem, 0.8209rem + 0.8955vw, 2.5rem);
+  text-transform: capitalize;
+  text-align: center;
+  color: #000000;
+`;
+
+export const Content = styled.div``;
+export const Name = styled(Heading)`
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: clamp(0.875rem, 0.7407rem + 0.6716vw, 2rem);
+  font-weight: 400;
+
+  @media (${device.smUp}) {
+    margin: 0 0 10px;
+  }
+`;
+export const Details = styled(Paragraph)`
+  font-family: BR Firma;
+  font-size: clamp(0.75rem, 0.6903rem + 0.2985vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0em;
+  text-align: justify;
+  @media (${device.clUp}) {
+    /* max-width: 1440px; */
+  }
+`;
+export const PersonContainer = styled.div`
+  margin: 30px 0;
+
+  @media (${device.smUp}) {
+    display: flex;
+    gap: 16px;
+  }
+  @media (${device.clUp}) {
+    gap: 56px;
   }
 `;
