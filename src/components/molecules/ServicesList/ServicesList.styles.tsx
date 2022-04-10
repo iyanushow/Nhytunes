@@ -8,9 +8,6 @@ export const StyledDiv = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (${device.xtUp}) {
-    justify-content: flex-start;
-  }
   @media (${device.xsUp}) {
     justify-content: space-between;
   }
