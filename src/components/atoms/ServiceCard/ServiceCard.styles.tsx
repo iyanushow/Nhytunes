@@ -44,10 +44,6 @@ export const StyledLink = styled(Link)`
 
   width: 90%;
 
-  @media (${device.xtUp}) {
-    width: 48%;
-  }
-
   @media (${device.xsUp}) {
     width: 48%;
     min-width: 165px;
