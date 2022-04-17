@@ -21,8 +21,8 @@ const Button = ({
 }: ButtonProps) => {
   if (type === "link") {
     return (
-      <StyledLink to={link}>
-        <StyledButton variant={variant} type="button" className={className} {...rest}>
+      <StyledLink to={link} className={className}>
+        <StyledButton variant={variant} type="button" {...rest}>
           {" "}
           {children}
         </StyledButton>

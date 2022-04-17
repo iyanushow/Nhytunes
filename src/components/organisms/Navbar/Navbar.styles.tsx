@@ -33,13 +33,15 @@ export const CloseBtn = styled(FontAwesomeIcon)`
   cursor: pointer;
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 10px;
+  font-size: 24px;
+  width: 24px;
 `;
 
 export const StyledDiv = styled.div<ChangeProps>`
   width: 65%;
   max-width: 300px;
-  height: 450px;
+  height: 320px;
   z-index: 2;
   color: ${props => props.theme.colors.white};
   display: flex;
@@ -75,7 +77,7 @@ export const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 60%;
+  height: 270px;
   justify-content: space-between;
   align-items: center;
 

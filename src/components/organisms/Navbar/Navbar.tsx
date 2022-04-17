@@ -18,7 +18,7 @@ import useMediaMatch from "@rooks/use-media-match";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isMobile = useMediaMatch("(max-width: 1024px)");
+  const isMobile = useMediaMatch("(max-width: 1023px)");
 
   const toggleNav: () => void = () => {
     console.log("clicked");
@@ -33,7 +33,7 @@ const Navbar = () => {
 
       <NavInner onMouseLeave={isMobile && isOpen ? toggleNav : undefined}>
         <StyledDiv isOpen={isOpen}>
-          {isMobile && <CloseBtn icon={faX} size="2x" onClick={toggleNav} />}
+          {isMobile && <CloseBtn icon={faX} onClick={toggleNav} />}
           <LinkContainer>
             <NavLink to="about">About us</NavLink>
             <NavLink to="services/:1">Services</NavLink>
