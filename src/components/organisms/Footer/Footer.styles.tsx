@@ -41,14 +41,6 @@ export const Inner = styled.div`
   }
 `;
 
-export const Outer = styled.div`
-  width: 100%;
-  background: ${({ theme }) => theme.colors.primary};
-  height: 75px;
-  position: absolute;
-  left: 0;
-`;
-
 export const Logo = styled(ImageAnchor)`
   grid-column: 1/2;
 
