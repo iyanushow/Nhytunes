@@ -17,14 +17,16 @@ export const StyledNav = styled.nav`
   padding: 0 5%;
 `;
 
+export const NavInner = styled.div`
+  @media (${device.clUp}) {
+    width: 100%;
+  }
+`;
+
 export const Hamburger = styled.div<ChangeProps>`
   display: ${props => (props.isOpen ? "none" : "block")};
   cursor: pointer;
   z-index: 10;
-
-  @media (${device.clUp}) {
-    display: none;
-  }
 `;
 
 export const CloseBtn = styled(FontAwesomeIcon)`
