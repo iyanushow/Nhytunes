@@ -6,8 +6,11 @@ import ImageAnchor from "../components/atoms/Image";
 import { device } from "../utils";
 import { Services } from "../components/sections";
 
+export const TeamSection = styled(Section)``;
+
 export const MissionSection = styled(Section)`
   padding-bottom: 20px;
+  background: ${props => props.theme.colors.grey};
 `;
 
 export const MissionBlock = styled.div`
@@ -15,6 +18,7 @@ export const MissionBlock = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 60px;
+
   @media (${device.smUp}) {
     gap: 30px;
   }
