@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { device } from "../../../utils/mediaQueries";
-// import { darken } from "polished";
 import Heading from "../../atoms/Heading";
 import ImageAnchor from "../../atoms/Image";
 import Paragraph from "../../atoms/Paragraph";
@@ -9,7 +8,6 @@ import Section from "../../atoms/Section";
 import { Link } from "react-router-dom";
 
 export const StyledSection = styled(Section)`
-  background: ${props => props.theme.colors.grey};
   padding: 20px 5% 40px;
   @media (${device.clUp}) {
     padding: 40px 5%;
@@ -80,4 +78,8 @@ export const StyledDiv = styled.div`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
+`;
+export const ImageDiv = styled.div`
+  position: relative;
+  width: 100%;
 `;

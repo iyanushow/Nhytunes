@@ -8,7 +8,7 @@ export const Wrapper = styled.div``;
 
 export const DataGrid = styled(Section)`
   background: #f9f9f9;
-  padding: 20px 5%;
+  padding-top: 20px;
 `;
 
 export const Title = styled(Heading)`
@@ -50,8 +50,11 @@ export const Content = styled.div`
   }
 
   ul {
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 40px;
+    @media (${device.mdUp}) {
+      margin-left: 20px;
+    }
   }
 `;
 
@@ -65,9 +68,6 @@ export const ThumbContainer = styled.div`
   row-gap: 24px;
   column-gap: 10px;
   justify-content: center;
-  @media (${device.xsUp}) {
-    justify-content: unset;
-  }
 `;
 
 export const ThumbDiv = styled.div`

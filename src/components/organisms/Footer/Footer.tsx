@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
   Contact,
@@ -7,7 +6,6 @@ import {
   FooterSection,
   Inner,
   Logo,
-  Outer,
   QuickLinks,
   Return,
   SocialIcon,
@@ -92,7 +90,6 @@ const Footer = () => {
           handleClick={scrollToTop}
         />
       </Inner>
-      <Outer></Outer>
     </FooterSection>
   );
 };

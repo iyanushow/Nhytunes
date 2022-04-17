@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { serviceList } from "../../../utils";
 import {
   Content,
@@ -19,6 +19,10 @@ const ServicesGrid = ({ initialService = 1 }: { initialService: number }) => {
     serviceList.find(service => service.id === initialService) || serviceList[0]
   );
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [selectedService]);
+
   return (
     <Wrapper>
       <DataGrid>
@@ -34,7 +38,7 @@ const ServicesGrid = ({ initialService = 1 }: { initialService: number }) => {
         </ContentBox>
       </DataGrid>
       <ThumbGrid>
-        <Title level="h1" color="primary">
+        <Title level="h1" color="primary" aligned="center">
           Other Services
         </Title>
         <ThumbContainer>
