@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { device } from "../../../utils";
 import Section from "../../atoms/Section";
-import Block from "../../atoms/Block";
 import Heading from "../../atoms/Heading";
 import Button from "../../atoms/Button";
-import ImageAnchor from "../../atoms/Image";
 
 export const StyledSection = styled(Section)`
   & > div {
@@ -13,13 +11,14 @@ export const StyledSection = styled(Section)`
 
     gap: 40px;
     width: 100%;
+    max-width: 500px;
   }
   @media (${device.mdUp}) {
     padding: 100px 10%;
-  }
-  @media (${device.clUp}) {
     & > div {
+      max-width: unset;
       flex-direction: row;
+      align-items: center;
       justify-content: space-between;
     }
   }
@@ -32,17 +31,6 @@ export const Container = styled.div`
   }
   @media (${device.lgUp}) {
     width: 50%;
-  }
-`;
-
-export const StyledBlock = styled(Block)`
-  border-radius: 8px;
-  padding: 20px;
-
-  @media (${device.clUp}) {
-    padding: 20px 40px;
-    width: 40%;
-    align-self: center;
   }
 `;
 
@@ -111,23 +99,4 @@ export const Submit = styled(Button)`
   @media (${device.smUp}) {
     padding: 16px 8%;
   }
-`;
-
-export const Content = styled.div`
-  border-bottom: 1px solid white;
-  padding: 30px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  &:last-child {
-    border-bottom: none;
-  }
-`;
-export const StyledIcon = styled(ImageAnchor)``;
-export const StyledText = styled.p`
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 24px;
-  color: #fffefe;
-  /* width: 100%; */
 `;

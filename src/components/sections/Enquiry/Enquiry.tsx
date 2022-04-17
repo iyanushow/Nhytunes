@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import {
   Container,
-  Content,
   Form,
   Input,
   InputBlock,
   Label,
-  StyledBlock,
   StyledHeading,
-  StyledIcon,
   StyledSection,
-  StyledText,
   Submit,
   TextArea,
 } from "./Enquiry.styles";
+import EnquiryData from "../../molecules/EnquiryData";
 
 interface FormProps {
   name: string;
@@ -64,29 +61,7 @@ const Enquiry = () => {
         </Form>
       </Container>
 
-      <StyledBlock>
-        <Content>
-          <StyledIcon width={32} height={32} imageUrl="/images/enquiry/email.svg" />
-          <StyledText>
-            nnlglobalenergy@gmail.com <br />
-            info@nnlge.com
-          </StyledText>
-        </Content>
-        <Content>
-          <StyledIcon width={32} height={32} imageUrl="/images/enquiry/phone.svg" />
-          <StyledText>
-            +(234) 706 979 4016
-            <br />
-            +(234) 811 732 3037
-          </StyledText>
-        </Content>
-        <Content>
-          <StyledIcon width={32} height={32} imageUrl="/images/enquiry/location.svg" />
-          <StyledText>
-            Plot 954 Akarigbere Close <br /> Victoria Island Lagos
-          </StyledText>
-        </Content>
-      </StyledBlock>
+      <EnquiryData />
     </StyledSection>
   );
 };
