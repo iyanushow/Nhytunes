@@ -5,7 +5,7 @@ import Carousel from "../../molecules/Carousel";
 import DesktopService from "../../molecules/DesktopService";
 
 const AboutServices = () => {
-  const isMobile = useMediaMatch("(max-width: 768px)");
+  const isMobile = useMediaMatch("(max-width: 767px)");
 
   const [data] = useState(carouselSlides);
 

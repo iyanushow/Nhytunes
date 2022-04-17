@@ -50,8 +50,11 @@ export const Content = styled.div`
   }
 
   ul {
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 40px;
+    @media (${device.mdUp}) {
+      margin-left: 20px;
+    }
   }
 `;
 

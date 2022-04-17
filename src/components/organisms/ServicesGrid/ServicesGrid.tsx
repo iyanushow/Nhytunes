@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { serviceList } from "../../../utils";
 import {
   Content,
@@ -18,6 +18,10 @@ const ServicesGrid = ({ initialService = 1 }: { initialService: number }) => {
   const [selectedService, setSelectedService] = useState(
     serviceList.find(service => service.id === initialService) || serviceList[0]
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [selectedService]);
 
   return (
     <Wrapper>
