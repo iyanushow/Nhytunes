@@ -38,7 +38,7 @@ const ServicesGrid = ({ initialService = 1 }: { initialService: number }) => {
         </ContentBox>
       </DataGrid>
       <ThumbGrid>
-        <Title level="h1" color="primary">
+        <Title level="h1" color="primary" aligned="center">
           Other Services
         </Title>
         <ThumbContainer>

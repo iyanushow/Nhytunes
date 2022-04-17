@@ -5,9 +5,9 @@ export const StyledSection = styled.section`
   width: 100%;
   /* max-width: 1440px; */
   padding: 60px 5%;
-  @media (${device.lgUp}) {
+  /* @media (${device.lgUp}) {
     padding: 60px 10%;
-  }
+  } */
 `;
 
 export const InnerDiv = styled.div`
