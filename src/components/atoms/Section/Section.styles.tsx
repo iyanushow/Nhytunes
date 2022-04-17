@@ -3,11 +3,8 @@ import { device } from "../../../utils";
 
 export const StyledSection = styled.section`
   width: 100%;
-  padding: 60px 12px;
   /* max-width: 1440px; */
-  @media (${device.smUp}) {
-    padding: 60px 5%;
-  }
+  padding: 60px 5%;
   @media (${device.lgUp}) {
     padding: 60px 10%;
   }
