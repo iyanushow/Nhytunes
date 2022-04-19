@@ -22,7 +22,7 @@ const Button = ({
   if (type === "link") {
     return (
       <StyledLink to={link} className={className}>
-        <StyledButton variant={variant} type="button" {...rest}>
+        <StyledButton variant={variant} type="button" {...rest} onClick={handleClick}>
           {" "}
           {children}
         </StyledButton>

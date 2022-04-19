@@ -35,10 +35,21 @@ const Navbar = () => {
         <StyledDiv isOpen={isOpen}>
           {isMobile && <CloseBtn icon={faX} onClick={toggleNav} />}
           <LinkContainer>
-            <NavLink to="about">About us</NavLink>
-            <NavLink to="services/:1">Services</NavLink>
-            <NavLink to="projects">Projects</NavLink>
-            <CtaButton variant="primary" type="link" link="enquiry">
+            <NavLink onClick={() => setIsOpen(false)} to="about">
+              About us
+            </NavLink>
+            <NavLink onClick={() => setIsOpen(false)} to="services/:1">
+              Services
+            </NavLink>
+            <NavLink onClick={() => setIsOpen(false)} to="projects">
+              Projects
+            </NavLink>
+            <CtaButton
+              variant="primary"
+              type="link"
+              link="enquiry"
+              handleClick={() => setIsOpen(false)}
+            >
               Contact us
             </CtaButton>
           </LinkContainer>

@@ -53,7 +53,7 @@ export const StyledDiv = styled.div<ChangeProps>`
   clip-path: ${props =>
     props.isOpen ? "circle(2000px at 90% -10%) " : "circle(30px at 100% -10% )"};
   pointer-events: ${props => (props.isOpen ? "all" : "none")};
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-size: 10px;
   @media (${device.clUp}) {
     position: static;
@@ -68,9 +68,9 @@ export const StyledDiv = styled.div<ChangeProps>`
     pointer-events: all;
   }
 
-  svg {
+  /* svg {
     display: ${props => (props.isOpen ? "unset" : "none")};
-  }
+  } */
 `;
 
 export const LinkContainer = styled.div`
