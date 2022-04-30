@@ -8,32 +8,32 @@ import {
   StyledLink,
 } from "./About.styles";
 
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 
 const About = () => {
   return (
-    <Zoom>
-      <StyledSection>
-        <StyledHeading level="h2" aligned="left" color="primary">
-          What NNL Global <br /> Energy is all About
-        </StyledHeading>
+    // <Zoom>
+    <StyledSection>
+      <StyledHeading level="h2" aligned="left" color="primary">
+        What NNL Global <br /> Energy is all About
+      </StyledHeading>
 
-        <StyledImageAnchor imageUrl="/images/about.jpeg" />
+      <StyledImageAnchor imageUrl="/images/about.jpeg" />
 
-        <StyledDiv>
-          <StyledParagraph>
-            NNL Global Energy is a subsidiary of Nhytunes Nigeria Limited, a company registered by
-            corporate affairs commission having its registered office in Nigeria. It’s objective is
-            to carry out certain specialized services in Marine, oil and gas, Energy, Chemical and
-            industrial sector.
-          </StyledParagraph>
+      <StyledDiv>
+        <StyledParagraph>
+          NNL Global Energy is a subsidiary of Nhytunes Nigeria Limited, a company registered by
+          corporate affairs commission having its registered office in Nigeria. It’s objective is to
+          carry out certain specialized services in Marine, oil and gas, Energy, Chemical and
+          industrial sector.
+        </StyledParagraph>
 
-          <StyledLink to="/about">
-            <StyledButton variant="primary">Read More</StyledButton>
-          </StyledLink>
-        </StyledDiv>
-      </StyledSection>
-    </Zoom>
+        <StyledLink to="/about">
+          <StyledButton variant="primary">Read More</StyledButton>
+        </StyledLink>
+      </StyledDiv>
+    </StyledSection>
+    // </Zoom>
   );
 };
 
