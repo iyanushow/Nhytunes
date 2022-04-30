@@ -16,10 +16,10 @@ export const StyledProduct = styled(Product)`
   }
 
   @media (${device.smUp}) {
-    max-width: 230px;
+    width: 230px;
   }
   @media (${device.clUp}) {
-    max-width: 240px;
+    width: 240px;
   }
 
   &:hover > div:first-child {
