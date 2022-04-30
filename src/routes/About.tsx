@@ -60,13 +60,12 @@ const About = () => {
                 Babatunde Olusegun
               </Name>
               <Details>
-                A seasoned Maritime Expert with over 10 years’ progressive experience. He was
-                trained by Lloyds as Offshore and marine surveyor, trained by the ABS as marine
-                Auditor, trained by the DNV as a vessel manager. He has held and outperformed
-                different strategy roles with local and international marine companies, functioned
-                in management capacity as the Designated Person Ashore, Marine heavy lift project
-                management, warranty surveyor and a marine consultant to some indigenous marine
-                company.
+                A seasoned Maritime Expert with more than 15 years progressive experience. He was
+                trained by Lloyd's as an offshore and marine surveyor , trained by the Abs as a
+                marine lead Auditor and trained by the DNV as a vessel manager. He has held and
+                outperformed in different strategy roles with local and international marine
+                companies, functioning in management capacity as the Designated Person Ashore,
+                Marine heavy lift project manager, warranty surveyor and marine consultant.
                 <br />
                 <br />
                 He holds Post Graduate Degree in Maritime communication and Navigation from

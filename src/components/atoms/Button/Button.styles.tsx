@@ -43,7 +43,7 @@ export const StyledButton = styled.button<ButtonProps>`
   padding: 10px 24px;
   color: ${props => props.theme.colors.primary};
   background: ${props => props.theme.colors.white};
-
+  transition: all 0.4s ease-in-out;
   &:hover {
     background: ${props => lighten(0.1, props.theme.colors.white)};
   }

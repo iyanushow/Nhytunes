@@ -11,6 +11,7 @@ import {
   StyledButton,
   BtnGroup,
 } from "./Projects.styles";
+import Fade from "react-reveal/Fade";
 
 const products: IProject[] = projects.filter((_, idx) => idx < 4);
 
@@ -29,13 +30,15 @@ const Projects = ({ className = "" }) => {
       </TextBlock>
 
       <StyledDiv className={className}>
-        {products.map(project => (
-          <StyledProduct product={project} key={project.id} data-title={project.title}>
-            <HoverDiv>
-              <Text>{project.title}</Text>
-            </HoverDiv>
-          </StyledProduct>
-        ))}
+        <Fade left>
+          {products.map(project => (
+            <StyledProduct product={project} key={project.id} data-title={project.title}>
+              <HoverDiv>
+                <Text>{project.title}</Text>
+              </HoverDiv>
+            </StyledProduct>
+          ))}
+        </Fade>
       </StyledDiv>
 
       <BtnGroup>
